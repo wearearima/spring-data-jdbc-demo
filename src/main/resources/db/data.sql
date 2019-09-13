@@ -1,0 +1,20 @@
+INSERT INTO country VALUES (1, 'France', 66990000);
+INSERT INTO country VALUES (2, 'Japan', 126800000);
+INSERT INTO country VALUES (3, 'Spain', 46720000);
+INSERT INTO country VALUES (4, 'USA', 327200000);
+
+INSERT INTO city VALUES (1, 'Paris', 2141000, 1);
+INSERT INTO city VALUES (2, 'Lyon', 513275, 1);
+INSERT INTO city VALUES (3, 'Burdeos', 249712, 1);
+
+INSERT INTO city VALUES (4, 'Tokyo', 9273000, 2);
+INSERT INTO city VALUES (5, 'Kyoto', 1475000, 2);
+INSERT INTO city VALUES (6, 'Kōbe', 1537000, 2);
+
+INSERT INTO city VALUES (7, 'Madrid', 3174000, 3);
+INSERT INTO city VALUES (8, 'Barcelona', 1615000, 3);
+INSERT INTO city VALUES (9, 'Donostia', 345821, 3);
+
+INSERT INTO city VALUES (10, 'Washington DC', 633427, 4);
+INSERT INTO city VALUES (11, 'New York', 8623000, 4);
+INSERT INTO city VALUES (12, 'San Francisco', 884363, 4);
