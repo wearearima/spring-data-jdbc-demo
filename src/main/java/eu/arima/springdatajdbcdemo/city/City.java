@@ -8,13 +8,29 @@ import javax.persistence.*;
 @Table(name = "city")
 public class City {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private Integer population;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne()
     @JoinColumn(name = "country")
     private Country country;
+
+    public City() {
+    }
+
+    public City(String name, Integer population, Country country) {
+        this.name = name;
+        this.population = population;
+        this.country = country;
+    }
+
+    public City(Integer id, String name, Integer population, Country country) {
+        this.id = id;
+        this.name = name;
+        this.population = population;
+        this.country = country;
+    }
 
     public Integer getId() {
         return id;

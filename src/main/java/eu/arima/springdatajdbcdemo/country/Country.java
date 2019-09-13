@@ -10,11 +10,11 @@ import java.util.Set;
 @Table(name = "country")
 public class Country {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private Integer population;
-    @OneToMany()
+    @OneToMany(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "country")
     private Set<City> cities = new HashSet<>();
 
@@ -22,6 +22,10 @@ public class Country {
     public Country() {
     }
 
+    public Country(String name, Integer population) {
+        this.name = name;
+        this.population = population;
+    }
 
     public Country(Integer id, String name, Integer population) {
         this.id = id;
