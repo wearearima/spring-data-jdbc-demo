@@ -13,8 +13,9 @@ INSERT INTO city VALUES (6, 'Kōbe', 1537000, 2);
 
 INSERT INTO city VALUES (7, 'Madrid', 3174000, 3);
 INSERT INTO city VALUES (8, 'Barcelona', 1615000, 3);
-INSERT INTO city VALUES (9, 'Donostia', 345821, 3);
+INSERT INTO city VALUES (9, 'Donosti', 186665, 3);
+INSERT INTO city VALUES (10, 'Bilbo', 345821, 3);
 
-INSERT INTO city VALUES (10, 'Washington DC', 633427, 4);
 INSERT INTO city VALUES (11, 'New York', 8623000, 4);
 INSERT INTO city VALUES (12, 'San Francisco', 884363, 4);
+INSERT INTO city VALUES (13, 'Washington DC', 633427, 4);
